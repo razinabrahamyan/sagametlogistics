@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateBasesTable extends Migration {
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up() {
+        Schema::create('bases', function (Blueprint $table) {
+            $table->id();
+            $table->string('title')
+                  ->comment('Наименование базы');
+            $table->string('address')
+                  ->nullable()
+                  ->comment('Адрес базы');
+            $table->string('coordinates')
+                  ->nullable()
+                  ->comment('Координаты базы');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down() {
+        Schema::dropIfExists('bases');
+    }
+}

@@ -1,0 +1,122 @@
+{
+  "menu": [
+    {
+      "navheader": "Меню",
+      "slug": ""
+    },
+    {
+      "url": "/new-query",
+      "name": "Добавить заявку",
+      "icon": "fa-solid fa-file-circle-plus",
+      "slug": "app-todo",
+      "user_access": [],
+      "role_access": [1,2,3]
+    },
+    {
+      "url": "/",
+      "name": "Список заявок",
+      "icon": "fa-solid fa-clipboard-list",
+      "slug": "app-kanban",
+      "user_access": [],
+      "role_access": [1,2,3]
+    },
+    {
+      "url": "/?sent=true",
+      "name": "История",
+      "icon": "fa-solid fa-clipboard-check",
+      "slug": "monitoring",
+      "user_access": [],
+      "role_access": [1,2,3,5]
+    },
+    {
+      "url": "/personnel/query-list",
+      "name": "Мои заявки",
+      "icon": "far fa-list-alt",
+      "slug": "app-kanban",
+      "user_access": [],
+      "role_access": [4]
+    },
+    {
+      "url": "/query-recovery",
+      "name": "Удаленные",
+      "icon": "fas fa-trash-restore-alt",
+      "slug": "monitoring",
+      "user_access": [9],
+      "role_access": [1,2]
+    },
+    {
+      "name": "Статистика",
+      "icon": "fas fa-chart-pie",
+      "slug": "/monitoring",
+      "user_access": [9],
+      "role_access": [1,2],
+      "submenu": [
+        {
+          "url": "/monitoring/statistics",
+          "name": "Заявки",
+          "icon": "far fa-address-book",
+          "slug": "monitoring",
+          "user_access": [],
+          "role_access": [1]
+        },
+        {
+          "url": "/monitoring/managersPlan",
+          "name": "План",
+          "icon": "fa-solid fa-chart-line",
+          "slug": "monitoring",
+          "user_access": [],
+          "role_access": [1]
+        }
+      ]
+    },
+    {
+      "url": "/monitoring/drivers",
+      "name": "Список водителей",
+      "icon": "far fa-id-card",
+      "slug": "monitoring",
+      "user_access": [],
+      "role_access": [1,2]
+    },
+    {
+      "url": "/addresses/map",
+      "name": "Карта адресов",
+      "icon": "fas fa-map-marked-alt",
+      "slug": "addresses",
+      "user_access": [],
+      "role_access": [1,2]
+    },
+    {
+      "url": "/telephony/hlr",
+      "name": "HLR прозвон",
+      "icon": "fas fa-phone-volume",
+      "slug": "telephony",
+      "user_access": [],
+      "role_access": [1]
+    },
+    {
+      "name": "Пользователи",
+      "icon": "fas fa-users",
+      "slug": "/",
+      "user_access": [],
+      "role_access": [1],
+      "submenu": [
+        {
+          "url": "/user/list",
+          "name": "Список пользователей",
+          "icon": "far fa-address-book",
+          "slug": "telephony",
+          "user_access": [],
+          "role_access": [1]
+        },
+        {
+          "url": "/user/create",
+          "name": "Добавить пользователя",
+          "icon": "fas fa-user-plus",
+          "slug": "telephony",
+          "user_access": [],
+          "role_access": [1]
+        }
+      ]
+    }
+  ]
+}

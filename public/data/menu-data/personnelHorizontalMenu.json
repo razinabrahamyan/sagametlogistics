@@ -1,0 +1,14 @@
+{
+  "menu": [
+    {
+      "navheader": "Меню",
+      "slug": ""
+    },
+    {
+      "url": "/personnel",
+      "name": "Мои заявки",
+      "icon": "far fa-list-alt",
+      "slug": "app-kanban"
+    }
+  ]
+}
